@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notebook | fanlz.com</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="header">
+        <h1 class="logo">Fanlz's Notebook</h1>
+        <a id="add-btn" href="javascript:void(0);"><img src="img/add.png">新建笔记</a>
+    </div>
+    <div id="main">
+        <div class="content">
+            <div class="control">
+                <a href="javascript:void(0);"  class="edit on">编辑</a><a href="javascript:void(0);" class="preview">预览</a>
+            </div>
+            <div class="describe">
+                <span>所属目录:</span><a class="n-catalog" href="javascript:void(0);"><span data-cid="1" class="curcatalog">HTML</span><img src="img/select.png"><ul class="catalist"></ul></a>
+            </div>
+            <div class="title">
+                <label>标题:</label><input id="note-title" type="text" placeholder="标题">
+                <span class="hint">保存成功！</span>
+                <span class="note-btn"><a class="save" href="javascript:void(0);">保存</a><a class="delete" href="javascript:void(0);">删除</a></span>
+            </div>
+            
+            <div class="article">
+                <div class="article-box">
+                    <div class="edit-box">
+                        <textarea id="text" placeholder="内容..."></textarea>
+                    </div>
+                    <div class="prev-box">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="catalog">
+            <span class="all-notes">全部笔记</span>
+            <ul class="menu">
+                <li class="trash file" data-cid="-1"><span>废纸篓</span></li>
+            </ul>
+        </div>
+        <div id="list" >
+            <div class="listcata">
+                <span>全部笔记</span>
+            </div>
+            <div class="list-wrapper">
+                <ul id="notes-list">    
+                </ul>
+            </div>
+        </div>
+    </div>   
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/remarkable.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
