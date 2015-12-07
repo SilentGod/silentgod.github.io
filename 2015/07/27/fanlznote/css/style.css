@@ -209,7 +209,7 @@ code{
 }
 #list .list-item{
     list-style: none;
-    height:70px;
+    height:66px;
     padding:6px 6px 4px 8px;
     border-bottom: 1px solid #eee;
     overflow: hidden;
